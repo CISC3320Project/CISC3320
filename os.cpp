@@ -1,5 +1,5 @@
-/* CISC 3320                                                 */
-/*                      OS project                           */
-/*                                                           */
-/*                                                           */
-/* wu                                                          */
+/* CISC3320 Project
+Authors:
+Zakareya Alatoli
+
+*/
