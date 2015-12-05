@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1448130750 source:c:\users\zakareya\documents\github\cisc3320\os.cpp
+
+1385316878 source:c:\users\zakareya\documents\github\cisc3320\sos\main.cpp
+	<iostream>
+
