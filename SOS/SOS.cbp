@@ -23,6 +23,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="../os.cpp" />
+		<Unit filename="../sos.o" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
