@@ -8,14 +8,14 @@ Deshi Wu
 #define's          // since they lie outside of function definitions
 typedef's          // they are global to the whole file and retain their
 static variables // values over the course of program execution
-                            // (i. e., between function invocations).
+                              // (i. e., between function invocations).
 */
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void siodisk(long jobnum);
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
+void siodisk(long jobnum);
+void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
 
       // Channel commands siodisk and siodrum are made available to you by the simulator.
-      // siodisk has one argument: job number, of type long and passed by value.
-      // siodrum has four arguments, all of type long and passed by value:
+      // siodisk has one argument: job number, of type int and passed by value.
+      // siodrum has four arguments, all of type int and passed by value:
       // first argument is job number;
       // second argument is job size;
       // third argument is starting core address;
@@ -24,8 +24,8 @@ static variables // values over the course of program execution
       // 0 => move from drum to core (memory)
 
 
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void ontrace(); // called without arguments
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void offtrace(); // called without arguments
+void ontrace(); // called without arguments
+void offtrace(); // called without arguments
 
       // The 2 trace procedures allow you to turn the tracing mechanism on and off.
       // The default value is off. WARNING: ontrace() produces a blow-by-blow description

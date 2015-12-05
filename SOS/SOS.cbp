@@ -23,6 +23,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+<<<<<<< HEAD
+=======
+		<Unit filename="../os.cpp" />
+		<Unit filename="../sos.o" />
+>>>>>>> refs/remotes/origin/osproject
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
