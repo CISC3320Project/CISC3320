@@ -20,12 +20,12 @@ void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
 void ontrace(); // called without arguments
 void offtrace(); // called without arguments
 void swapper(long);
-void jobManager(long);
+void bookkeep(long);
 void updateMemory();
 void getJob(long);
 void removeJob(long);
 void getIoJob();
-void JobRun(long&, long[]);
+void loadAndRun(long&, long[]);
 long notInMemory();
 
 
@@ -77,7 +77,7 @@ void Svc(long &a, long p[])
 }
 
 //to find the reamaining Max CPU time when job enter interrupt - Deshi Wu
-void jobManager(long time){
+void bookkeep(long time){
 
 
 }
@@ -106,7 +106,7 @@ void swapper(long JobNum){
 }
 
 //dispatcher
-void JobRun(){
+void loadAndRun(){
 
 }
 
