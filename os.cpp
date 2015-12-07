@@ -1,39 +1,32 @@
-/* CISC3320 Project
-Authors:
-Zakareya Alatoli
+/* CISC3320 Project                 */
+/*Authors:                          */
+/*Zakareya Alatoli                  */
+/*Deshi Wu                          */
+#include<iostream>
+#include "Job.h"
+#include "CpuScheduler.h"
+#include "MemoryManager.h"
+
+/*
 Deshi Wu
-
-
-#include's        // These declarations (e.g. jobtable) exist only in your file, but
-#define's          // since they lie outside of function definitions
-typedef's          // they are global to the whole file and retain their
-static variables // values over the course of program execution
-                            // (i. e., between function invocations).
+before you start, you MUST read the information from here very carefully, 
+please don't rush on reading them:
+http://www.sci.brooklyn.cuny.edu/~jones/cisc3320/osproj1.pdf 
+http://www.sci.brooklyn.cuny.edu/~jones/cisc3320/osproj2.html
 */
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void siodisk(long jobnum);
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
-
-      // Channel commands siodisk and siodrum are made available to you by the simulator.
-      // siodisk has one argument: job number, of type long and passed by value.
-      // siodrum has four arguments, all of type long and passed by value:
-      // first argument is job number;
-      // second argument is job size;
-      // third argument is starting core address;
-      // fourth argument is interpreted as follows:
-      // 1 => move from core (memory) to drum
-      // 0 => move from drum to core (memory)
-
-
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void ontrace(); // called without arguments
-/* ALREADY IMPLEMENTED BY PROFESSOR*/void offtrace(); // called without arguments
-
-      // The 2 trace procedures allow you to turn the tracing mechanism on and off.
-      // The default value is off. WARNING: ontrace() produces a blow-by-blow description
-      // of each event and results in an extremely large amount of output.
-      // It should be used only as an aid in debugging.
-      // Even with the trace off, performance statistics are
-      // generated at regular intervals and a diagnostic message appears in case of a crash.
-      // In either case, your OS need not print anything.
+/* ALREADY IMPLEMENTED BY PROFESSOR*/
+void siodisk(long jobnum);
+void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
+void ontrace(); // called without arguments
+void offtrace(); // called without arguments
+void swapper(long);
+void jobManager(long);
+void updateMemory();
+void getJob(long);
+void removeJob(long);
+void getIoJob();
+void JobRun(long&, long[]);
+long notInMemory();
 
 
 void startup()
@@ -42,11 +35,6 @@ void startup()
       // Called once at start of the simulation.
 
 }
-
-// INTERRUPT HANDLERS
-    // The following 5 functions are the interrupt handlers. The arguments
-    // passed from the environment are detailed with each function below.
-    // See RUNNING A JOB, below, for additional information
 
 void Crint (long &a, long p[])
 {
@@ -86,4 +74,43 @@ void Svc(long &a, long p[])
       // a = 6 => job requests disk i/o
       // a = 7 => job wants to be blocked until all its pending
       // I/O requests are completed
+}
+
+//to find the reamaining Max CPU time when job enter interrupt - Deshi Wu
+void jobManager(long time){
+
+
+}
+
+//this updates memory table - Deshi Wu
+void updateMemory(){
+
+}
+
+//get IO job -  Deshi WU
+void getIojob(){
+
+}
+
+//remove job from list - Deshi Wu
+void removeJob(long num){
+
+}
+
+//Swaps jobs between Drum and Memory - Deshi Wu
+//Updating memory
+void swapper(long JobNum){
+
+
+
+}
+
+//dispatcher
+void JobRun(){
+
+}
+
+//find the job that is not in memmory and return its number - Deshi Wu
+long notInMemory(){
+
 }
