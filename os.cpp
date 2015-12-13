@@ -9,9 +9,9 @@
 
 /*
 Deshi Wu
-before you start, you MUST read the information from here very carefully, 
+before you start, you MUST read the information from here very carefully,
 please don't rush on reading them:
-http://www.sci.brooklyn.cuny.edu/~jones/cisc3320/osproj1.pdf 
+http://www.sci.brooklyn.cuny.edu/~jones/cisc3320/osproj1.pdf
 http://www.sci.brooklyn.cuny.edu/~jones/cisc3320/osproj2.html
 */
 /* ALREADY IMPLEMENTED BY PROFESSOR*/
@@ -112,5 +112,5 @@ void loadAndRun(){
 
 //find the job that is not in memmory and return its number - Deshi Wu
 long notInMemory(){
-
+    return 0;
 }
