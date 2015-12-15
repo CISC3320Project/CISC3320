@@ -35,7 +35,7 @@ bool drumBusy=false; // when a job is being swapped, then its value is true
 
 
 void startup(){
-//ontrace
+offtrace();
 }
 
 // Put new jobs to job list---Deshi Wu
