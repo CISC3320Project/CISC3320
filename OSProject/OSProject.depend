@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1450626443 source:c:\users\zakareya\documents\github\cisc3320\osproject\os.cpp
+	<iostream>
+	<queue>
+	<vector>
+	"Job.h"
+	"CpuScheduler.h"
+	"MemoryManager.h"
+
+1450586864 c:\users\zakareya\documents\github\cisc3320\osproject\job.h
+	<iostream>
+
+1450586864 c:\users\zakareya\documents\github\cisc3320\osproject\cpuscheduler.h
+	<iostream>
+	<vector>
+
+1450586864 c:\users\zakareya\documents\github\cisc3320\osproject\memorymanager.h
+	<iostream>
+	<vector>
+

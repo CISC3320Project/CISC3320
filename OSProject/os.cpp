@@ -11,7 +11,7 @@
 
 using namespace std;
 
-/void ontrace();
+void ontrace();
 void offtrace();
 void siodisk(long jobnum);
 void siodrum(long jobnum, long jobsize, long coreaddress, long direction);
